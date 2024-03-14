@@ -1,0 +1,75 @@
+/*---Seletor Universal---
+
+*{
+    border:1px solid red;
+}
+*/
+/*---Seletor de Texto---
+
+h1{
+    color: blue;
+}
+*/
+/*---Seletor de Classe---*/
+
+/* .azul{
+    color: blue;
+}
+
+p.verde{            (aplica a classe verde em um p que tenha como classe verde)
+    color: green;
+}
+p(espaço).verde{    (aplica em um elemento verde  que esteja dentro de p)
+color: green;
+
+} */
+
+/*---Seletor de ID---
+
+#cabecalho{
+    border:1px solid blue;
+} 
+*/
+/*---Seletor de Filho---*/
+
+#seletor-ex-certo{
+    float:left;
+    margin-right: 150px;
+    margin-bottom: 30px;
+}
+
+#seletor-ex-errado{
+    float:left;
+}
+
+/* .filho>p{
+    color: red;
+} */
+
+.clear{
+    clear: both;
+}
+
+/*---Seletor de descendente---*/
+
+/* p a{
+    color: green;
+    text-decoration: none;
+}
+
+.descendente p{
+    color: royalblue;
+
+} */
+
+/*---Seletor de irmão adjacente---*/
+
+/* h2+p{
+    color:saddlebrown;
+} */
+
+/*---Seletor de irmão Geral---*/
+
+/* h3~p{
+    color:seagreen;
+}  */

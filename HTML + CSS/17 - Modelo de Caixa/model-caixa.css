@@ -1,0 +1,34 @@
+/*
+Modelo Caixa
+*/
+
+.conteudo{
+    border: 1px solid red;
+    /* Padding é usado para dar espaçamento interno */
+    /* Padding é somado com o valor da largura (width). Por exemplo
+    width = 100px 
+    padding-left = 10px
+    Largura total: (width total)
+    100px+10px=110px
+    */
+
+    /*         top   right  bottom  left*/
+    /*padding: 20px  15px   10px    5px;*/
+    
+    /*           top/bottom   right/left*/
+    /*padding:     20px           5px   */
+
+    padding:20px;
+
+    /* Margin é usado para dar espaçamento externo */
+    /*As margin se sobrepõe sobre outras*/
+    /*         top   right  bottom  left*/
+    /*margin:  20px  15px   10px    5px;*/
+    
+    /*           top/bottom   right/left*/
+    /*margin:      20px           5px   */
+    
+    margin: 10px;
+
+    width: 150px;
+}

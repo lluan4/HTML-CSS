@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seletores</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="seletores.css">
+    </head>
+    <body>
+
+        <div style="text-align: center;">
+            <img src="seletores.JPG">
+        </div>
+
+        <hr>
+        
+        <div>
+            <h1>Seletor de Classe</h1>
+            <p class="azul">Teste 0</p>
+            <p class="verde">Teste 1</p>
+            <h7 class="verde">Teste 2</h1>
+        </div>
+
+        <hr>
+
+        <div>
+            <h1 ">Seletor de Filho</h1>
+            <div id="seletor-ex-certo">
+                <h3>Ex certo</h3>
+                <div class="filho">
+                    <p>Teste 0</p>
+                    <p>Teste 1</p>
+                    <h7>Teste 2</h1>
+                </div>
+            </div>
+            <div id="seletor-ex-errado">
+                <h3>Ex errado</h3>
+                <div class="filho">
+                    <div>
+                        <p>Teste 0</p>
+                    </div>
+                    <span><p>Teste 1</p></span>
+                    <h7>Teste 2</h1>
+                </div>
+            </div>
+        </div>
+
+        <hr class="clear">
+
+        <div >
+            <h1>Seletor de Descendente</h1>
+            <p><a href="">Teste 0</a></p>
+            <div class="descendente">
+                <p>Teste 1</p>
+                <div>
+                    <p>Teste 2</p>
+                </div>
+            </div>
+            <h7>Teste 3</h1>
+        </div>
+
+        <hr>
+
+        <div>
+            <h1>Seletor Irmão adjacente</h1>
+            <p>Teste 0</p>
+            <h2>Texto em h2</h2>
+            <p>Teste 1</p>
+            <p>Teste 2</p>
+            <h7>Teste 3</h1>
+        </div>
+
+        <hr>
+
+        <div>
+            <h1>Seletor Irmão geral</h1>
+            <p>Teste 0</p>
+            <h3>Texto em h3</h3>
+            <p>Teste 1</p>
+            <p>Teste 2</p>
+            <h7>Teste 3</h1>
+        </div>
+
+    </body>
+</html>

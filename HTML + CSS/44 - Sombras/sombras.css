@@ -1,0 +1,19 @@
+/* Sombras */
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    /*           x    y    blur   (espalhar)spread            opacity*/
+    box-shadow: 5px  5px   2px          0px       rgba(0,0,0,0.6);;
+}
+
+#caixa h1{
+    color: white;
+    /* text-shadow: 2px 2px black; */
+    /*            x   y   blur          opacity*/
+    text-shadow: 5px 5px 2px rgba(0,0,0,0.6);
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <title>Flexitens</title>
+        <meta charset="utf-8">
+
+        <!-- flexbox CSS -->
+        <style type="text/css">
+
+            #conteudo {
+                background: #d6d6d6;
+                height: 400px;
+                display: flex;
+
+                /*flex-direction: row|row-reverse|column|column-reverse */
+                /* flex-direction: row ; */
+
+                /* flex-wrap: nowrap|wrap|wrap-reverse */
+                /* flex-wrap: nowrap; */
+
+                /* justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly */
+                /* justify-content:space-around; */
+
+                /* align-items: stretch|center|flex-start|flex-end|baseline */
+                /* align-items:baseline; */
+            }
+
+            .item {
+                /* width: 400px; */
+                height: 100px;
+                background: white;
+                border:1px solid gray;
+                margin: 10px;
+                border: 1px solid red;
+                flex-shrink:1;
+                flex-grow: 0;
+                flex-basis: 700px;
+            }
+
+            /* Define a ordem para colocar um item em um contêiner flexível ou de grade. Os itens em um contêiner são classificados por valor crescente (iniciado em 0) e, em seguida, pela ordem do código-fonte */
+
+            /* .ordem1{
+                order:1;
+            }
+
+            .ordem{
+                order:-1;
+            } */
+
+            /* Esta propriedade especifica quanto espaço restante no contêiner flexível deve ser atribuído ao item (o fator de crescimento flexível). */
+
+            /* .flex-grow {
+                flex-grow: 1;
+            } */
+
+            /* Define o fator de redução flexível de um item flexível. Se o tamanho de todos os itens flexíveis for maior que o contêiner flexível, os itens encolherão para caber de acordo com */
+            
+            /* .flex-shrink {
+                flex-shrink:1;
+            } */
+
+            /* Define o tamanho principal inicial de um item flexível. Ele define o tamanho da caixa de conteúdo, a menos que seja definido de outra forma com .flex-basis box-sizing */
+
+            /*.flex-basis{
+                flex-basis:0;
+            } */
+
+            /* .item1 {
+                
+            }
+
+            .item2 {
+               
+            }
+
+            .item3 {
+                
+            } */
+
+        </style> 
+
+    </head>
+
+    <body>
+
+        <h1>Flexitens</h1>
+
+        <div id="conteudo">
+            <div class="item item1">01</div>
+            <div class="item item2">02</div>
+            <div class="item item3">03</div>
+            <div class="item">04</div>
+        </div>
+
+    </body>
+
+</html>

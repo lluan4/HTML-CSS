@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <title>Flexblox - Flexible Box Layout</title>
+        <meta charset="utf-8">
+
+        <!-- flexbox CSS -->
+        <style type="text/css">
+
+            #conteudo {
+                background: #d6d6d6;
+               
+                height: 400px;
+                display: flex;
+
+                /* A propriedade CSS flex-direction define como os itens flexíveis são colocados no contêiner flexível, definindo o eixo principal e a direção (normal ou invertido).*/
+                /*flex-direction: row|row-reverse|column|column-reverse */
+                flex-direction: row ;
+
+                /* A propriedade CSS flex-wrap define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas. Se o argumento for valido, ele define a direção em que as linhas são empilhadas.*/
+                /* flex-wrap: nowrap|wrap|wrap-reverse */
+                flex-wrap: nowrap;
+
+                /* A propriedade CSS justify-content define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um contêiner flexível e do eixo embutido de um contêiner de grade. */
+                /* justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly */
+                justify-content:flex-start;
+
+                /* A propriedade CSS align-items estabelece o valor align-self em todos filhos diretos como um grupo. A propriedade align-self estabelece o alinhamento de um certo item dentro do bloco que o contém. Em Flexbox ele controla o alinhamento dos itens em Cross Axis (en-US), enquanto que no Grid Layout, controla o alinhamento dos itens no Eixo de Bloco dentro de sua  grid area. */
+                /* align-items: stretch|center|flex-start|flex-end|baseline */
+                align-items:baseline;
+
+            }
+
+            .item {
+                
+                background: white;
+                border:1px solid gray;
+                margin: 10px;
+                border: 1px solid red;
+            }
+
+        </style> 
+
+    </head>
+
+    <body>
+
+        <h1>Flexbox</h1>
+
+        <div id="conteudo">
+            <div class="item" style="padding: 60px;">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04 <br><br> Mais conteudo</div>
+        </div>
+
+    </body>
+
+</html>

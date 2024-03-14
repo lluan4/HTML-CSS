@@ -1,0 +1,110 @@
+
+<div>
+    <p id="1">
+        <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
+            alt="Muro da Cidade"
+            width="513" height="342"
+            title="Muro da Cidade por Tarso Bessa">
+    </p>
+    <p id="2">
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
+            alt="Intro Cod3r"
+            width="513" height="342"
+            title="Intro Cod3r">
+    </p>
+    
+    <p id="3" class="circular">
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png"
+            alt="Rio de Janeiro" height="342">
+    </p>
+    <p id="4">
+        <img  src="http://files.cod3r.com.br/curso-web/avatar.jpg"
+                alt="Avatar" height="50" align="left">
+    </p>
+
+    <p id="5" class="cidade"></p>
+    
+    <p id="6" >
+        <picture>
+            <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+                media="(min-width: 600px)">
+            <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png">
+        </picture>
+    </p>
+</div>
+
+<style>
+    div {
+        overflow: hidden;
+    }
+
+    p {
+        position: absolute;
+        display: none;
+        left: 10px;
+        transition: transform 0.5s ease-in-out; 
+    }
+
+    @keyframes mynewmove {
+        from {left: 0px;}
+        to {left: 1000px;}
+    }
+    .circular {
+        width: 513px;
+    }
+
+    .texto {
+        width: 400px;
+    }
+
+    .cidade {
+        width: 513px;
+        height: 342px;
+        background-image: url("http://files.cod3r.com.br/curso-web/imagem4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+
+</style>
+
+<script>
+    
+
+    function carousel () {
+        let index = 0
+        const itensCarousel = document.querySelectorAll("p")
+        const elementos = itensCarousel.length
+    
+        const slider = () => {
+            if(index > elementos - 1) index = 0;
+            showSlide()
+        }
+
+        const showSlide = () => {
+            itensCarousel[index].style.display = 'block'
+            if(index > 0) itensCarousel[index - 1].style.display = 'none'
+            if(index == 0 && itensCarousel[elementos - 1].style.display == 'block' ) itensCarousel[elementos - 1].style.display = 'none'
+            index++
+        }
+
+        let intervalSlide = setInterval(slider, 3000)
+
+        itensCarousel.forEach(elemento => {
+            elemento.addEventListener("mouseenter", () => {
+                clearInterval(intervalSlide)
+            })
+        })
+        itensCarousel.forEach(elemento => {
+            elemento.addEventListener("mouseleave", () => {
+                intervalSlide = setInterval(slider, 3000)
+            })
+        })
+
+        
+    }
+
+    carousel()
+
+    
+</script>

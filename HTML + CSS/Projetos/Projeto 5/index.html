@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <title>Página Inicial - Museu Nacional</title>
+        <meta charset="utf-8">
+
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" type="text/css" href="normalize/normalize.css">
+
+        <!-- Fonte CSS -->
+        <link rel="stylesheet" type="text/css" href="font/stylesheet-font.css">
+
+        <!-- Estilo CSS -->
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <div id="container"> <!-- Inicio Container -->
+            <header> <!-- Inicio Header -->
+
+                <div id="logo"> <!-- Inicio Logo -->
+
+                    <h1><a href="">Museu Nacional</a></h1>
+
+                </div> <!-- Fim Logo -->
+
+                <nav> <!-- Inicio Barra de Navegação -->
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li class="nav-item"><a href="#">exposição</a></li>
+                        <li class="nav-item"><a href="#">pesquisa</a></li>
+                        <li class="nav-item"><a href="#">acervo</a></li>
+                        <li class="nav-item"><a href="#">vídeos</a></li>
+                        <li class="nav-item"><a href="#">fotos</a></li>
+                        <li class="nav-item"><a href="#">contato</a></li>
+                    </ul>
+                </nav> <!-- Fim Barra de Navegação -->
+
+            </header> <!-- Fim Header -->
+
+            <div id="principal"> <!-- Inicio Principal -->
+            
+                <div id="conteudo">
+
+                    <section id="capa">
+                        <img src="img/museu.png">
+                    </section>
+
+                    <section id="postagem"> <!-- Inicio Postagens -->
+
+                        <article id="video" > 
+                            <h3>Vídeo: Conheça o museu</h3>
+                            <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+
+                        </article>
+
+                        <article id="mapa">
+                            <h3>Mapa: Encontre museu</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2064455939335!2d-43.22871758451052!3d-22.905755043593977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1642464101463!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </article>
+    
+                        <article id="exposicoes">
+                            <h3>Exposições</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">3 Dicas e Truques em museu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">O que é museu: Tudo que você precisa saber</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Guia de Iniciante em museu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">O que é museu: conceito, objetivos e TUDO sobre [2020]</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Saiba como encontrar museu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">7 regras de museu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4 lições de museu para levar para sua vida</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><strong>Veja todos (65)</strong></a>
+                                    </li>
+                                </ul>
+                        </article>
+
+                        <article id="historia">
+                            <h3>200 anos de história</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque purus nisl, consequat quis quam maximus, imperdiet maximus dui. Nunc vulputate vehicula dignissim. Nulla facilisi. Praesent suscipit interdum diam vitae faucibus. Nulla pretium metus congue augue fringilla fringilla. Cras ultricies sapien nisl, sit amet dictum tellus eleifend posuere. In ornare elementum nibh, id maximus ante suscipit sed. Vivamus sed eros quam. Aenean ac iaculis metus. Praesent dignissim gravida dui, et tincidunt nunc interdum id. Sed viverra imperdiet ipsum sit amet commodo. Sed ut nisl non libero molestie euismod dignissim ac sapien. Cras posuere ullamcorper risus non luctus. Aliquam id sapien quis elit finibus blandit et nec justo. Quisque in pellentesque turpis.
+                            </p>
+                            <a href="#"><strong>Leia mais...</strong></a>
+                            
+                        </article>
+
+                    </section>
+                    
+                </div>
+
+                
+
+                <aside> <!-- Inicio Barra Lateral -->
+
+                    <section id="depoimento">
+                        <img src="img/depoimento.png">
+                    </section>  
+
+                    <section id="visita"> <!-- Inicio Visita -->
+                        <h4 style="margin-bottom: 10px;">Faça uma Visita</h4>
+                        <form>
+                            <fieldset>
+                                <legend>Selecione uma data:</legend>
+
+                                <label for="data">Data</label>
+                                <input class="campo" type="date" id="data" value="dd/mm/aaaa">
+                            
+                                <label for="qtd">Qtd. Pessoas</label>
+                                <input  class="campo" style="width: 32px;" type="text" id="qtd" value="1">
+
+                            </fieldset>
+
+                            <input class="botao" type="submit" value="Verificar Disponibilidade">
+
+                        </form>
+                    </section>  <!-- Fim Visita -->
+                    <section id="galeria"> <!-- Inicio Galeria -->
+                        <h4>Galeria de fotos</h4>
+                        <a href="">
+                            <img src="img/imagem1.jpg" height="93" width="93" alt="descrição img">
+                        </a>
+                        <a href="">
+                            <img src="img/imagem2.jpg" height="93" width="93" alt="descrição img">
+                        </a>
+                        <a href="">
+                            <img src="img/imagem3.jpg" height="93" width="93" alt="descrição img">
+                        </a>
+                        <a href="">
+                            <img src="img/imagem4.jpg" height="93" width="93" alt="descrição img">
+                        </a>
+
+                    </section> <!-- Fim Galeria -->
+
+                </aside> <!-- Fim Barra Lateral -->
+                <footer style="clear: both;">
+                    <p>
+                        <a href="#">home</a></li>
+                        <a href="#">exposição</a></li>
+                        <a href="#">pesquisa</a></li>
+                        <a href="#">acervo</a></li>
+                        <a href="#">vídeos</a></li>
+                        <a href="#">fotos</a></li>
+                        <a href="#">contato</a></li>
+                    </p>
+                    <p>
+                        2019 <a href="">Museu Nacional</a> - Todos os direitos reservados
+                    </p>
+                </footer>
+            </div> <!-- Inicio Principal -->
+            
+            
+        </div> <!-- Fim Container-->
+        
+    </body>
+
+</html>
